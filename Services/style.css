@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: Montserrat;
+}
+
+/* Content - Background */
+.location {
+  width: 1060px;
+}
+
+.back img {
+  width: 100%;
+}
+
+.text-box {
+  margin: 100px 50px 0 150px;
+}
+
+.back div h1 {
+  font-family: Times New Roman;
+  font-size: 42px;
+}
+
+.back div p {
+  font-size: 16px;
+}
+
+/* Content - Location */
+.location div .btn {
+  padding-top: 25px;
+}
+
+/* Content - Services */
+.services {
+  width: 1100px;
+  margin: 300px 0 0 0;
+  padding: 0 30px 0 0;
+}
+
+.booking {
+  background-image: url("images/img-booking.png");
+  height: 410px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 0 0;
+}
+
+.buy {
+  background-image: url("images/img-buy.png");
+  height: 410px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Content - Background */
+  .back img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .back div h1 {
+    font-size: 32px;
+  }
+
+  .back div p {
+    font-size: 20px;
+  }
+
+  .text-box {
+    margin: 90px 0 0 120px;
+  }
+
+  /* Content - Location */
+  .location {
+    width: 800px;
+    margin: 20px 0 0 0;
+  }
+
+  .location div h2 {
+    font-size: 24px;
+  }
+  .location div p {
+    font-size: 16px;
+  }
+  .location div .btn {
+    font-size: 16px;
+    padding-top: 25px;
+  }
+
+  /* Content - Services */
+  .services {
+    width: 800px;
+    margin: 300px 0 0 15px;
+    padding: 0 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Content - Background */
+  .back img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .back div h1 {
+    font-size: 28px;
+  }
+
+  .back div p {
+    font-size: 16px;
+  }
+
+  .text-box {
+    margin: 90px 0 0 120px;
+  }
+
+  /* Content - Location */
+  .location {
+    width: 700px;
+    margin: 20px 0 0 0;
+  }
+
+  .location div h2 {
+    font-size: 20px;
+  }
+  .location div p {
+    font-size: 10px;
+  }
+  .location div .btn {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+
+  /* Content - Services */
+  .services {
+    width: 700px;
+    margin: 300px 0 0 15px;
+    padding: 0 30px 0 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Content - Background */
+  .back img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .back div h1 {
+    font-size: 24px;
+  }
+
+  .back div p {
+    font-size: 10px;
+  }
+
+  .text-box {
+    margin: 80px 0px 0 70px;
+  }
+  /* Content - Location */
+  .location {
+    width: 380px;
+    margin: 40px 0 0 0;
+  }
+
+  .location div h2 {
+    font-size: 20px;
+  }
+  .location div p {
+    font-size: 10px;
+  }
+  .location div .btn {
+    font-size: 14px;
+    padding-top: 25px;
+  }
+
+  /* Content - Services */
+  .services {
+    width: 380px;
+    height: 400px;
+    margin: 300px 0 0 15px;
+    padding: 0 30px 0 0;
+  }
+
+  .booking {
+    background-image: url("images/img-booking.png");
+    height: 310px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 0 0;
+  }
+
+  .buy {
+    background-image: url("images/img-buy.png");
+    height: 310px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 0 0;
+  }
+}

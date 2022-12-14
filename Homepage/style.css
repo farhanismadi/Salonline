@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* Navbar */
+.navbar-brand {
+  font-family: Abril;
+  font-size: 24px;
+  color: #f3f8b5;
+}
+
+nav ul {
+  font-family: Montserrat;
+  margin: 0 220px;
+}
+
+nav .collapse .btn {
+  width: 150px;
+  height: 40px;
+  font-family: Montserrat;
+}
+/* Home */
+.home-box {
+  color: #f3f8b5;
+  font-family: Abril Fatface;
+  z-index: 9;
+  margin-top: -25%;
+}
+
+.home-box h1 {
+  font-size: 48px;
+}
+
+.home-box p {
+  font-family: Montserrat;
+}
+
+.home-box .btn {
+  width: 50%;
+  font-size: 16px;
+  font-family: Montserrat;
+  margin: 15px 0 0 0;
+}
+
+.bg-logo {
+  margin-top: -7%;
+}
+
+.bg-logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.carousel-img {
+  width: 100%;
+}
+
+/* Services */
+#services {
+  font-family: Montserrat;
+}
+
+#services h2 {
+  font-family: Abril;
+}
+
+#services .row .col {
+  width: 350px;
+}
+
+#services .row .col div {
+  width: 270px;
+  height: 40px;
+}
+
+/* About */
+#about div div .about-img {
+  height: 100%;
+}
+/* Testimonial */
+/* FAQ */
+/* Contact */
+
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  .navbar-brand {
+    font-family: Abril;
+    font-size: 24px;
+    color: #f3f8b5;
+  }
+
+  nav ul {
+    font-family: Montserrat;
+    margin: 0 0px;
+  }
+
+  nav .collapse .btn {
+    width: 150px;
+    height: 40px;
+    font-family: Montserrat;
+  }
+  /* Home */
+  .home-box {
+    color: #f3f8b5;
+    font-family: Abril Fatface;
+    z-index: 9;
+    margin-top: -10%;
+  }
+
+  .home-box h1 {
+    font-size: 30px;
+  }
+
+  .home-box p {
+    font-family: Montserrat;
+  }
+
+  .home-box .btn {
+    width: 50%;
+    font-size: 12px;
+    font-family: Montserrat;
+    margin: 15px 0 0 0;
+  }
+
+  .bg-logo {
+    margin-top: -7%;
+  }
+
+  .bg-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .carousel-img {
+    width: 100%;
+  }
+  /* Home */
+  #home {
+    height: 100%;
+  }
+
+  .home-box {
+    color: #f3f8b5;
+    font-family: Abril Fatface;
+    z-index: 9;
+    margin-top: -25%;
+  }
+
+  .home-box h1 {
+    font-size: 48px;
+  }
+
+  .home-box p {
+    font-family: Montserrat;
+  }
+
+  .home-box .btn {
+    width: 50%;
+    font-size: 12px;
+    font-family: Montserrat;
+    margin: 15px 0 0 0;
+  }
+
+  .bg-logo {
+    margin-top: -7%;
+  }
+
+  .bg-logo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: 100%;
+  }
+  /* Services */
+  /* About */
+  #about div div .about-img {
+    width: 100%;
+    height: 100%;
+  }
+  /* Testimonial */
+  /* FAQ */
+  /* Contact */
+}
+
+@media screen and (max-width: 600px) {
+  /* Navbar */
+  nav ul {
+    margin: 0;
+  }
+
+  nav .collapse .btn {
+    margin: 20px 0;
+  }
+  /* Home */
+  .home-box {
+    color: #f3f8b5;
+    font-family: Abril Fatface;
+    z-index: 9;
+    margin-top: -20%;
+  }
+
+  .home-box .btn {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .bg-logo {
+    margin-top: -7%;
+  }
+
+  .bg-logo img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .home-box h1 {
+    font-size: 14px;
+  }
+
+  .home-box p {
+    font-size: 9px;
+    font-family: Montserrat;
+    margin: 0 0 5px 0;
+  }
+
+  .carousel-img {
+    height: 100%;
+  }
+  /* Services */
+  /* About */
+  #about div div .about-img {
+    width: 100%;
+  }
+  /* Testimonial */
+  /* FAQ */
+  /* Contact */
+}
