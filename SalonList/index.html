@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Salon</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="images/Logo.png" alt="" />
+        <a href="#" class="logo">Salonline</a>
+      </div>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li><a href="#">Salon & Product</a></li>
+      </ul>
+      <div>
+        <img src="images/Ellipse.png" alt="" />
+        <a href="#" class="mail">User@gmail.com</a>
+      </div>
+    </header>
+
+    <section class="salon-product">
+      <div class="img-salon">
+        <h4>Salon & Product</h4>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="booking-system">
+        <h4>Search</h4>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <label class="form-label col-form-label-sm p-0 m-0"
+              >Booking System</label
+            >
+          </td>
+          <td>
+            <label class="form-label col-form-label-sm p-0 m-0">Services</label>
+          </td>
+          <td>
+            <label class="form-label col-form-label-sm p-0 m-0">Price</label>
+          </td>
+          <td>
+            <label class="form-label col-form-label-sm p-0 m-0">Location</label>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <select
+              style="padding: 10px; margin: 0 20px 0 0"
+              id="katogori"
+              class="form-select cari-mobil form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>At House and Salon</option>
+              <option>At House</option>
+              <option>At Salon</option>
+            </select>
+          </td>
+          <td>
+            <select
+              style="padding: 10px; margin: 0 20px 0 0"
+              class="form-select cari-mobil form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>Salon and Products</option>
+              <option>Salon</option>
+              <option>Prouduct</option>
+            </select>
+          </td>
+          <td>
+            <select
+              id="harga"
+              class="form-select cari-mobil form-select-sm"
+              aria-label=".form-select-sm example"
+              style="padding: 10px; margin: 0 20px 0 0"
+            >
+              <option selected>Fill The Price Range</option>
+              <option>Rp. 0 - Rp. 50.000</option>
+              <option>Rp. 50.000 - Rp. 150.000</option>
+              <option>Rp. 150.000 - Rp. 500.000</option>
+              <option>More than Rp. 500.000</option>
+            </select>
+          </td>
+          <td>
+            <select
+              style="padding: 10px; margin: 0 20px 0 0"
+              id="ststus"
+              class="form-select cari-mobil form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>Jaboetabek</option>
+              <option>Jakarta</option>
+              <option>Bogor</option>
+              <option>Depok</option>
+              <option>Tanggerang</option>
+              <option>Bekasi</option>
+            </select>
+          </td>
+          <td>
+            <button
+              style="
+                padding: 10px;
+                margin: 0 20px 0 0;
+                color: white;
+                border: 1px solid white;
+                background-color: #212121;
+              "
+              href="hasilPencarian.html"
+              class="btn btn-green"
+            >
+              Search
+            </button>
+          </td>
+        </tr>
+      </table>
+      <div class="searchbar"></div>
+    </section>
+
+    <section class="list" id="list">
+      <div class="heading">
+        <h1>Salon List</h1>
+        <hr width="100%" color="#212121" size="7" />
+      </div>
+
+      <div class="list-salon">
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Jakarta.png" />
+            </div>
+            <h1>Jakarta</h1>
+            <h3>Jl. Cempaka Putih Raya No.39B</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Bogor.png" />
+            </div>
+            <h1>Bogor</h1>
+            <h3>Jl. Baru Blk. D No.3A</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Depok.png" />
+            </div>
+            <h1>Depok</h1>
+            <h3>Jl. Raya Sawangan No.81</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Tangerang.png" />
+            </div>
+            <h1>Tangerang</h1>
+            <h3>Jl. Cipondoh Makmur Raya No.31</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="list2" id="list2">
+      <div class="list-salon">
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Depok.png" />
+            </div>
+            <h1>Depok</h1>
+            <h3>Jl. Raya Sawangan No.81</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Tangerang.png" />
+            </div>
+            <h1>Tangerang</h1>
+            <h3>Jl. Cipondoh Makmur Raya No.31</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Bekasi.png" />
+            </div>
+            <h1>Bekasi</h1>
+            <h3>Jl. Ir. H. Juanda No.87</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/farhanismadi/Salonline/DetailSalon/index.html"
+        >
+          <div class="salon">
+            <div class="salon-img">
+              <img src="images/Depok.png" />
+            </div>
+            <h1>Depok</h1>
+            <h3>Jl. Raya Sawangan No.81</h3>
+            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
+            <i class="bx bxs-star-half"></i>
+            <span>4.8</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="footer">
+        <div class="main">
+          <div class="col">
+            <h4>Jalan Besar No. 202 Mayangan Kota Probolonggo 200192</h4>
+            <h4>salononline@gmail.com</h4>
+            <h4>081-233-334-808</h4>
+          </div>
+          <div class="col">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Contact with us</h4>
+            <div class="social">
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bx-envelope"></i></a>
+            </div>
+          </div>
+          <div class="col">
+            <h4>Copyright Salonline 2022</h4>
+            <div class="footer-salonline">
+              <img src="images/Logo.png" alt="" />
+              <h1>Salonline</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
