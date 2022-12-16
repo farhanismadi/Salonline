@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
 
     <!-- Link Bootstrap -->
     <link
@@ -23,7 +23,7 @@
   <body class="h-100">
     <section class="login text-white p-5 position-absolute end-0 h-100">
       <div class="mb-5 d-flex align-items-center gap-2" style="color: #f3f8b5">
-        <img src="images/logo-salonline.svg" alt="" />
+        <img src="images/logo-salonline.svg" alt="Salonlone" />
         <span style="font-family: Times New Roman; font-size: 32px"
           >Salonline</span
         >
@@ -31,47 +31,54 @@
       <h2>Login</h2>
       <p class="mb-4">Welcome back! Please enter your details.</p>
       <div class="d-grid gap-2 mb-4">
-        <button class="btn bg-white p-3 rounded-1">
+        <a
+          href="https://accounts.google.com/login?hl=id"
+          class="btn bg-white p-3 rounded-1"
+        >
           <img class="me-2" src="images/google-icon.png" alt="" />
           <span>Log in with Google</span>
-        </button>
+        </a>
       </div>
       <hr />
-      <form class="mt-5" action="">
+      <form
+        class="mt-5 needs-validation"
+        action="https://farhanismadi.github.io/Salonline/Services/index.html"
+      >
         <div class="form-floating mb-3">
           <input
             type="email"
             class="form-control"
-            id="floatingInput"
+            id="validationCustom01"
             placeholder="name@example.com"
+            required
           />
-          <label class="text-black" for="floatingInput">Email</label>
+          <label class="text-black" for="validationCustom01">Email</label>
         </div>
         <div class="form-floating">
           <input
             type="password"
             class="form-control"
-            id="floatingPassword"
+            for="validationCustomUsername"
             placeholder="Password"
+            required
           />
-          <label class="text-black" for="floatingPassword">Password</label>
+          <label class="text-black" for="validationCustomUsername"
+            >Password</label
+          >
         </div>
         <div class="mb-5 form-check mt-3">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
           <label class="form-check-label" for="exampleCheck1"
             >Remember for 30 days</label
           >
-          <a class="text-white position-absolute end-0 pe-5" href=""
+          <a
+            class="text-white position-absolute end-0 pe-5"
+            href="https://farhanismadi.github.io/Salonline/Register/index.html"
             >Forgot Password</a
           >
         </div>
         <div class="d-grid gap-2">
-          <a
-            type="submit"
-            class="btn btn-dark p-3"
-            href="https://farhanismadi.github.io/Salonline/Services/index.html"
-            >Login</a
-          >
+          <button type="submit" class="btn btn-dark p-3" href="">Login</button>
         </div>
         <div class="text-center mt-2">
           <p class="d-inline">Don’t have an account?</p>

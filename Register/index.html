@@ -30,16 +30,20 @@
       </div>
       <h2>Create account</h2>
       <p class="mb-1">Create an account to enjoy all the services for free!</p>
-      <form class="mt-0" action="">
+      <form
+        class="mt-0"
+        action="https://farhanismadi.github.io/Salonline/Services/index.html"
+      >
         <div class="row mb-3">
           <div class="form-floating mb-3 col-12 col-md-6">
             <input
               type="text"
               class="form-control"
-              id="floatingInput"
+              id="validationCustom01"
               placeholder="name@example.com"
+              required
             />
-            <label class="text-black ps-4" for="floatingInput"
+            <label class="text-black ps-4" for="validationCustom01"
               >First Name</label
             >
           </div>
@@ -47,10 +51,11 @@
             <input
               type="text"
               class="form-control"
-              id="floatingPassword"
+              id="validationCustom02"
               placeholder="Password"
+              required
             />
-            <label class="text-black ps-4" for="floatingPassword"
+            <label class="text-black ps-4" for="validationCustom02"
               >Last Name</label
             >
           </div>
@@ -60,10 +65,11 @@
             <input
               type="number"
               class="form-control"
-              id="number"
+              id="validationCustom03"
               placeholder="00000000"
+              required
             />
-            <label class="text-black ps-4" for="floatingInput"
+            <label class="text-black ps-4" for="validationCustom03"
               >Phone Number</label
             >
           </div>
@@ -71,10 +77,11 @@
             <input
               type="date"
               class="form-control"
-              id="date"
+              id="validationCustom04"
               placeholder="Password"
+              required
             />
-            <label class="text-black ps-4" for="floatingPassword">Date</label>
+            <label class="text-black ps-4" for="validationCustom04">Date</label>
           </div>
         </div>
         <div class="row mb-3">
@@ -82,10 +89,13 @@
             <input
               type="email"
               class="form-control"
-              id="email"
+              id="validationCustom05"
               placeholder="name@example.com"
+              required
             />
-            <label class="text-black ps-4" for="floatingInput">Email</label>
+            <label class="text-black ps-4" for="validationCustom05"
+              >Email</label
+            >
           </div>
           <div class="form-floating col-12 col-md-6">
             <select class="form-select p-2" aria-label="Default select example">
@@ -100,10 +110,11 @@
             <input
               type="password"
               class="form-control"
-              id="Password"
+              id="validationCustom06"
               placeholder="Password"
+              required
             />
-            <label class="text-black ps-4" for="floatingPassword"
+            <label class="text-black ps-4" for="validationCustom06"
               >Password</label
             >
           </div>
@@ -111,35 +122,35 @@
             <input
               type="password"
               class="form-control"
-              id="ConfirmPassword"
+              id="validationCustom07"
               placeholder="Password"
+              required
             />
-            <label class="text-black ps-4" for="floatingPassword"
+            <label class="text-black ps-4" for="validationCustom07"
               >Confirm Password</label
             >
           </div>
         </div>
         <div class="mb-4 form-check mt-1">
           <input type="checkbox" class="form-check-input" id="exampleCheck2" />
-          <label class="form-check-label" for="exampleCheck1"
+          <label class="form-check-label" for="validationCustom0"
             >I agree to all the Terms and Privacy policy
           </label>
         </div>
         <div class="row">
           <div class="d-grid gap-2 col-12 mb-2 col-md-6">
-            <a
-              type="submit"
-              class="btn btn-dark p-3"
-              href="https://farhanismadi.github.io/Salonline/Services/index.html"
-            >
+            <button type="submit" class="btn btn-dark p-3">
               Create account
-            </a>
+            </button>
           </div>
           <div class="d-grid gap-2 col-12 col-md-6">
-            <button class="btn bg-white p-3 rounded-1">
+            <a
+              href="https://accounts.google.com/login?hl=id"
+              class="btn bg-white p-3 rounded-1"
+            >
               <img class="me-2" src="images/google-icon.png" alt="" />
               <span>Log in with Google</span>
-            </button>
+            </a>
           </div>
         </div>
 
