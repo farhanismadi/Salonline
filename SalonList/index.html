@@ -1,304 +1,874 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>List Salon</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon List</title>
 
+    <!-- Link Bootstrap -->
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="images/Logo.png" alt="" />
-        <a href="#" class="logo">Salonline</a>
-      </div>
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <ul class="navbar">
-        <li><a href="#">Salon & Product</a></li>
-      </ul>
-      <div>
-        <img src="images/Ellipse.png" alt="" />
-        <a href="#" class="mail">User@gmail.com</a>
-      </div>
-    </header>
-
-    <section class="salon-product">
-      <div class="img-salon">
-        <h4>Salon & Product</h4>
-      </div>
-    </section>
-
-    <section class="booking" id="booking">
-      <div class="booking-system">
-        <h4>Search</h4>
-      </div>
-      <table>
-        <tr>
-          <td>
-            <label class="form-label col-form-label-sm p-0 m-0"
-              >Booking System</label
-            >
-          </td>
-          <td>
-            <label class="form-label col-form-label-sm p-0 m-0">Services</label>
-          </td>
-          <td>
-            <label class="form-label col-form-label-sm p-0 m-0">Price</label>
-          </td>
-          <td>
-            <label class="form-label col-form-label-sm p-0 m-0">Location</label>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <select
-              style="padding: 10px; margin: 0 20px 0 0"
-              id="katogori"
-              class="form-select cari-mobil form-select-sm"
-              aria-label=".form-select-sm example"
-            >
-              <option selected>At House and Salon</option>
-              <option>At House</option>
-              <option>At Salon</option>
-            </select>
-          </td>
-          <td>
-            <select
-              style="padding: 10px; margin: 0 20px 0 0"
-              class="form-select cari-mobil form-select-sm"
-              aria-label=".form-select-sm example"
-            >
-              <option selected>Salon and Products</option>
-              <option>Salon</option>
-              <option>Prouduct</option>
-            </select>
-          </td>
-          <td>
-            <select
-              id="harga"
-              class="form-select cari-mobil form-select-sm"
-              aria-label=".form-select-sm example"
-              style="padding: 10px; margin: 0 20px 0 0"
-            >
-              <option selected>Fill The Price Range</option>
-              <option>Rp. 0 - Rp. 50.000</option>
-              <option>Rp. 50.000 - Rp. 150.000</option>
-              <option>Rp. 150.000 - Rp. 500.000</option>
-              <option>More than Rp. 500.000</option>
-            </select>
-          </td>
-          <td>
-            <select
-              style="padding: 10px; margin: 0 20px 0 0"
-              id="ststus"
-              class="form-select cari-mobil form-select-sm"
-              aria-label=".form-select-sm example"
-            >
-              <option selected>Jaboetabek</option>
-              <option>Jakarta</option>
-              <option>Bogor</option>
-              <option>Depok</option>
-              <option>Tanggerang</option>
-              <option>Bekasi</option>
-            </select>
-          </td>
-          <td>
-            <button
-              style="
-                padding: 10px;
-                margin: 0 20px 0 0;
-                color: white;
-                border: 1px solid white;
-                background-color: #212121;
-              "
-              href="hasilPencarian.html"
-              class="btn btn-green"
-            >
-              Search
-            </button>
-          </td>
-        </tr>
-      </table>
-      <div class="searchbar"></div>
-    </section>
-
-    <section class="list" id="list">
-      <div class="heading">
-        <h1>Salon List</h1>
-        <hr width="100%" color="#212121" size="7" />
-      </div>
-
-      <div class="list-salon">
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Jakarta.png" />
-            </div>
-            <h1>Jakarta</h1>
-            <h3>Jl. Cempaka Putih Raya No.39B</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Bogor.png" />
-            </div>
-            <h1>Bogor</h1>
-            <h3>Jl. Baru Blk. D No.3A</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Depok.png" />
-            </div>
-            <h1>Depok</h1>
-            <h3>Jl. Raya Sawangan No.81</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Tangerang.png" />
-            </div>
-            <h1>Tangerang</h1>
-            <h3>Jl. Cipondoh Makmur Raya No.31</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="list2" id="list2">
-      <div class="list-salon">
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Depok.png" />
-            </div>
-            <h1>Depok</h1>
-            <h3>Jl. Raya Sawangan No.81</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Tangerang.png" />
-            </div>
-            <h1>Tangerang</h1>
-            <h3>Jl. Cipondoh Makmur Raya No.31</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Bekasi.png" />
-            </div>
-            <h1>Bekasi</h1>
-            <h3>Jl. Ir. H. Juanda No.87</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-
-        <a
-          href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
-        >
-          <div class="salon">
-            <div class="salon-img">
-              <img src="images/Depok.png" />
-            </div>
-            <h1>Depok</h1>
-            <h3>Jl. Raya Sawangan No.81</h3>
-            <h4>Rp. 00.000,00 - Rp. 00.000,00</h4>
-            <i class="bx bxs-star-half"></i>
-            <span>4.8</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="footer">
-        <div class="main">
-          <div class="col">
-            <h4>Jalan Besar No. 202 Mayangan Kota Probolonggo 200192</h4>
-            <h4>salononline@gmail.com</h4>
-            <h4>081-233-334-808</h4>
-          </div>
-          <div class="col">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonial</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact</a></li>
+    <!-- Navbar -->
+    <section>
+      <nav
+        class="navbar navbar-expand-xl navbar-dark bg-dark"
+        style="z-index: 99"
+      >
+        <div class="container">
+          <img src="images/logo-salonline.svg" alt="" />
+          <a
+            class="navbar-brand ms-2 fw-bold"
+            href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+            style="font-family: 'Times New Roman', Times, serif; color: #f3f8b5"
+            >Salonline</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="nav-margin navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Salon & Products
+                </a>
+                <ul style="margin: 10px 0 0 0" class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/HomeAfterLogin/index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Services/index.html"
+                      >Services</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown d-flex">
+                <img
+                  class="align-items-center"
+                  src="images/icon-testimonial-1.png"
+                  alt=""
+                  width="42"
+                />
+                <a
+                  class="nav-link dropdown-toggle align-items-center"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hi, Valerie
+                </a>
+                <ul style="margin: 10px 0 0 0" class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Settings/index.html"
+                      >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Settings/index.html"
+                      >Setting</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Login/index.html"
+                      >LOGOUT</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
-          <div class="col">
-            <h4>Contact with us</h4>
-            <div class="social">
-              <a href="#"><i class="bx bxl-facebook"></i></a>
-              <a href="#"><i class="bx bxl-instagram"></i></a>
-              <a href="#"><i class="bx bxl-twitter"></i></a>
-              <a href="#"><i class="bx bx-envelope"></i></a>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Header -->
+    <section>
+      <img src="images/img-salonList.png" alt="" width="100%" />
+      <div
+        class="form-search container position-absolute top-50 start-50 translate-middle"
+      >
+        <h2
+          class="text-center text-white fw-bold fs-1"
+          style="font-family: 'Times New Roman', Times, serif"
+        >
+          <u>Salon & Product</u>
+        </h2>
+        <div class="bg-dark text-white p-3 rounded-3">
+          <h4 class="mb-3">Search</h4>
+          <div class="row">
+            <div class="col-lg-2 col-md-6 col-12">
+              <label class="form-label" for="">Booking At</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Salon</option>
+                <option value="1">House</option>
+              </select>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <label class="form-label" for="">Services</label>
+              <div class="d-flex gap-2">
+                <a
+                  class="flex-fill btn btn-light"
+                  data-bs-toggle="collapse"
+                  href="#salon"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >Salon</a
+                >
+                <a
+                  class="flex-fill btn btn-light"
+                  data-bs-toggle="collapse"
+                  href="#product"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >Product</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12">
+              <label class="form-label" for="">Price</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select Price Range</option>
+                <option value="1">Rp0 - Rp50.000,00</option>
+                <option value="2">Rp50.000,00 - Rp100.000,00</option>
+                <option value="3">Rp100.000,00 - Rp250.000,00</option>
+                <option value="4">Rp250.000,00 - Rp500.000,00</option>
+                <option value="5">More than Rp500.000,00</option>
+              </select>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+              <label class="form-label" for="">Location</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>JABODETABEK</option>
+                <option value="1">Jakarta</option>
+                <option value="2">Bogor</option>
+                <option value="3">Depok</option>
+                <option value="4">Tanggerang</option>
+                <option value="5">Bekasi</option>
+              </select>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12 d-grid">
+              <label class="form-label d-block text-dark" for="">text</label>
+              <button
+                class="btn btn-outline-light"
+                data-bs-toggle="collapse"
+                data-bs-target=".multi-collapse"
+                aria-expanded="false"
+                aria-controls="multiCollapseExample1 multiCollapseExample2"
+              >
+                Search
+              </button>
             </div>
           </div>
-          <div class="col">
-            <h4>Copyright Salonline 2022</h4>
-            <div class="footer-salonline">
-              <img src="images/Logo.png" alt="" />
-              <h1>Salonline</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="services">
+      <!-- Services -->
+      <div class="collapse multi-collapse" id="salon">
+        <div class="container">
+          <h2 class="text-center mt-5">Salon</h2>
+          <hr class="container" />
+          <div class="row gy-2 p-5">
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img src="images/Jakarta.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Pavilion Beauty Salon
+                  </h4>
+                  <p class="card-text text-white">
+                    Jl. Cempaka Putih Raya No.39B
+                  </p>
+                  <p class="card-text text-white">
+                    Rp. 20.000,00 - Rp. 150.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img src="images/Jakarta2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    AAR YAZUAR Salon
+                  </h4>
+                  <p class="card-text text-white">Jl. Kemang Utara No.5E</p>
+                  <p class="card-text text-white">
+                    Rp. 50.000,00 - Rp. 200.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img src="images/Bogor.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Rengganis Salon
+                  </h4>
+                  <p class="card-text text-white">Jl. Baru Blk. D No.3A</p>
+                  <p class="card-text text-white">
+                    Rp. 30.000,00 - Rp. 100.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img src="images/Bogor2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Othello Salon
+                  </h4>
+                  <p class="card-text text-white">Jl. Pakuan No.9</p>
+                  <p class="card-text text-white">
+                    Rp. 40.000,00 - Rp. 170.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img src="images/Depok.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    D'MOZE Salon
+                  </h4>
+                  <p class="card-text text-white">Jl. Raya Sawangan No.81</p>
+                  <p class="card-text text-white">
+                    Rp. 10.000,00 - Rp. 300.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img
+                  src="images/Tangerang.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    LATASIA Salon
+                  </h4>
+                  <p class="card-text text-white">
+                    Jl. Cipondoh Makmur Raya No.31
+                  </p>
+                  <p class="card-text text-white">
+                    Rp. 50.000,00 - Rp. 500.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img src="images/Bekasi.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Laris Love Salon
+                  </h4>
+                  <p class="card-text text-white">Jl. Ir. H. Juanda No.87</p>
+                  <p class="card-text text-white">
+                    Rp. 10.000,00 - Rp. 100.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0">
+                <img src="images/Bekasi2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">Moir Salon</h4>
+                  <p class="card-text text-white">
+                    Ruko Commercial Sinpasa A-27
+                  </p>
+                  <p class="card-text text-white">
+                    Rp. 30.000,00 - Rp. 150.000,00
+                  </p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Product -->
+      <div class="collapse multi-collapse" id="product">
+        <div class="container">
+          <h2 class="text-center">Product</h2>
+          <hr class="container" />
+          <div class="row gy-2 p-5">
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img src="images/HairMask.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">Hair Mask</h4>
+                  <p class="card-text text-white">
+                    To treat hair loss problems and other severe conditions.
+                  </p>
+                  <p class="card-text text-white">Rp. 75.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img
+                  src="images/HairTonic.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">Hair Tonic</h4>
+                  <p class="card-text text-white">
+                    To solve your scalp and hair problems.
+                  </p>
+                  <p class="card-text text-white">Rp. 70.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img
+                  src="images/HairSpray.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">Hair Spray</h4>
+                  <p class="card-text text-white">
+                    To keep the hairdo so that it lasts longer.
+                  </p>
+                  <p class="card-text text-white">Rp. 65.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img src="images/HairOil.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">Hair Oil</h4>
+                  <p class="card-text text-white">
+                    To maintain moisture, soften, and give shine to the hair.
+                  </p>
+                  <p class="card-text text-white">Rp. 85.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img src="images/Spray.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Stimulister Spray
+                  </h4>
+                  <p class="card-text text-white">
+                    Daily tonic to prevent hair loss. Strengthens hair roots.
+                  </p>
+                  <p class="card-text text-white">Rp. 100.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img
+                  src="images/product-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Elixir Ultime
+                  </h4>
+                  <p class="card-text text-white">
+                    Hair oil to give a beautiful shine to dull hair
+                  </p>
+                  <p class="card-text text-white">Rp. 80.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img
+                  src="images/product-4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Bain Prévention
+                  </h4>
+                  <p class="card-text text-white">
+                    JShampoo for cleaning & treating scalp with hair loss
+                    problems.
+                  </p>
+                  <p class="card-text text-white">Rp. 90.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="btn p-0 text-start col-6 col-md-4 col-lg-3"
+              href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+            >
+              <div class="card bg-dark p-0 text-center">
+                <img
+                  src="images/product-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    8H Night Serum
+                  </h4>
+                  <p class="card-text text-white">
+                    Light gel serum for all hair types. It works when the hair
+                    rests.
+                  </p>
+                  <p class="card-text text-white">Rp. 100.000,00</p>
+                  <div class="d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section
+      id="footer"
+      class="bg-dark p-5 text-light"
+      style="margin: 200px 0 0 0; font-size: 14px"
+    >
+      <div class="container">
+        <div class="footer row">
+          <div class="col-12 col-lg-4">
+            <ul class="nav d-block">
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link pt-0 ps-0"
+                  href="https://www.google.com/maps/@-6.2493128,106.7824432,15z"
+                  >Jalan Besar No. 202 Mayangan Kota Probolonggo 200192</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://mail.google.com/mail"
+                  >salononline@gmail.com</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-light nav-link ps-0" href="#home"
+                  >081-233-334-808</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2">
+            <ul class="nav d-block">
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link pt-0 ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Testimonial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <p>Connect with us</p>
+            <div>
+              <a class="me-1" href="https://www.facebook.com/"
+                ><img src="images/icon_facebook.png" alt=""
+              /></a>
+              <a class="mx-1" href="https://www.instagram.com/?hl=id"
+                ><img src="images/icon_instagram.png" alt=""
+              /></a>
+              <a class="mx-1" href="#"
+                ><img src="images/icon_twitter.png" alt="https://twitter.com/"
+              /></a>
+              <a class="mx-1" href="https://mail.google.com/mail"
+                ><img src="images/icon_mail.png" alt=""
+              /></a>
             </div>
+          </div>
+          <div class="col-12 col-lg-2 pt-3 pt-lg-0">
+            <p>© Copyright Salonline 2022</p>
+            <span
+              class="fw-bold"
+              style="font-family: abril; font-size: 30px; color: #f3f8b5"
+            >
+              <img src="images/logo-salonline.svg" alt="" /> Salonline
+            </span>
           </div>
         </div>
       </div>

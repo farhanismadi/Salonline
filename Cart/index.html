@@ -1,336 +1,290 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
-    initial-scale=1.0"
-    />
-    <title>Salonline</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav>
-      <div class="logo">
-        <img src="images/Untitled%20design%20(70)%201(1).svg" />
-      </div>
-      <div class="logo-sign">Salonline</div>
-      <div class="Profile-Picture">
-        <img src="images/Ellipse%2088.svg" />
-      </div>
-      <div class="v1">
-        <img src="images/Vector.svg" />
-      </div>
-      <div class="user-logo">U</div>
-      <div class="v2">
-        <img src="images/Vector.svg" />
-      </div>
-      <div class="bottom-nav">
-        <img src="images/Rectangle%20130.svg" />
-      </div>
-      <ul>
-        <li>
+    <!-- Navbar -->
+    <section>
+      <nav
+        class="navbar navbar-expand-xl navbar-dark bg-dark"
+        style="z-index: 99"
+      >
+        <div class="container">
+          <img src="images/logo-salonline.svg" alt="" />
           <a
-            class="cart"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Cart</a
+            class="navbar-brand ms-2 fw-bold"
+            href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+            style="font-family: 'Times New Roman', Times, serif; color: #f3f8b5"
+            >Salonline</a
           >
-        </li>
-        <li>
-          <a
-            class="SelectAll"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Select All</a
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </li>
-        <li>
-          <a
-            class="ClearAll"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Clear All</a
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDropdown"
           >
-        </li>
-        <li>
-          <a
-            class="hi-user"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Hi, User</a
-          >
-        </li>
-        <li>
-          <a
-            class="wishlist"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Move to Wishlist</a
-          >
-        </li>
-        <li>
-          <a
-            class="bin"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            ><img src="images/ph_trash-thin.svg"
-          /></a>
-        </li>
-        <li>
-          <a
-            class="wishlist2"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Move to Wishlist</a
-          >
-        </li>
-        <li>
-          <a
-            class="bin2"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            ><img src="images/ph_trash-thin.svg"
-          /></a>
-        </li>
-        <li>
-          <a
-            class="buy"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            ><img src="images/button.svg"
-          /></a>
-        </li>
-        <li>
-          <a
-            class="Jalan-Besar"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Jalan Besar No. 202 Mayangan Kota Probolonggo 200192</a
-          >
-        </li>
-        <li>
-          <a
-            class="Gmail"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >salononline@gmail.com</a
-          >
-        </li>
-        <li>
-          <a
-            class="No-Telepon"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >081-233-334-808</a
-          >
-        </li>
-        <li>
-          <a
-            class="Home"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Home</a
-          >
-        </li>
-        <li>
-          <a
-            class="Services"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Services</a
-          >
-        </li>
-        <li>
-          <a
-            class="About"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >About</a
-          >
-        </li>
-        <li>
-          <a
-            class="Testimonial"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Testimonial</a
-          >
-        </li>
-        <li>
-          <a
-            class="FAQ"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >FAQ</a
-          >
-        </li>
-        <li>
-          <a
-            class="Contact"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            >Contact</a
-          >
-        </li>
-        <li>
-          <a
-            class="fb"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            ><img src="images/icon_facebook.svg"
-          /></a>
-        </li>
-        <li>
-          <a
-            class="ig"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            ><img src="images/icon_instagram.svg"
-          /></a>
-        </li>
-        <li>
-          <a
-            class="twitter"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            ><img src="images/icon_twitter.svg"
-          /></a>
-        </li>
-        <li>
-          <a
-            class="mail"
-            href="https://farhanismadi.github.io/Salonline/Review/index.html"
-            ><img src="images/icon_mail.svg"
-          /></a>
-        </li>
-      </ul>
-
-      <div class="Location">Location</div>
-      <div class="Salon-Image">
-        <img src="images/Jakarta(1).svg" />
-      </div>
-      <div class="Salon-Jakarta">Salon Jakarta</div>
-      <div class="Pin">
-        <img
-          src="images/kisspng-gps-navigation-systems-computer-icons-royalty-free-5af9868e46e796%202.svg"
-        />
-      </div>
-      <div class="Pin-Text">Jalan Jakarta</div>
-      <div class="Telephone">
-        <img src="images/pngegg%202.svg" />
-      </div>
-      <div class="Phone-Number">0812312389</div>
-      <div class="Rating-Number">4/5</div>
-
-      <div class="wrapper">
-        <input type="checkbox" class="chkboxname" id="check" />
-        <label for="check"></label>
-        <div class="wrapper2">
-          <input type="checkbox" class="chkboxname" id="check2" />
-          <label for="check2"></label>
+            <ul class="nav-margin navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cart
+                </a>
+                <ul style="margin: 10px 0 0 0" class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/HomeAfterLogin/index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Settings/index.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/SalonList/index.html"
+                      >Salon List</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/DetailSalon/index.html"
+                      >Detail Salon</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown d-flex">
+                <img
+                  class="align-items-center"
+                  src="images/icon-testimonial-1.png"
+                  alt=""
+                  width="42"
+                />
+                <a
+                  class="nav-link dropdown-toggle align-items-center"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hi, Valerie
+                </a>
+                <ul style="margin: 10px 0 0 0" class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Settings/index.html"
+                      >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Settings/index.html"
+                      >Setting</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://farhanismadi.github.io/Salonline/Login/index.html"
+                      >LOGOUT</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="Allwrapper">
-          <input type="checkbox" id="checkAll" />
-          <label for="checkAll"></label>
+      </nav>
+    </section>
+
+    <!-- Content -->
+    <section>
+      <div class="container">
+        <div>
+          <div>
+            <div class="p-0 text-start">
+              <div class="card bg-dark p-0">
+                <img src="images/Jakarta.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title text-white fw-bold mb-4">
+                    Pavilion Beauty Salon
+                  </h4>
+                  <p class="card-text text-white">
+                    Jl. Cempaka Putih Raya No.39B
+                  </p>
+                  <div class="like d-flex justify-content-between mt-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart text-white"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <img class="" src="images/star-salon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <script type="text/javascript">
-        $(document).ready(function () {
-          $("#checkAll").click(function () {
-            $(".chkboxname").prop("checked", $(this).prop("checked"));
-          });
-        });
-      </script>
-
-      <div class="Stars">
-        <li><img src="images/Star%201.svg" /></li>
-        <li><img src="images/Star%201.svg" /></li>
-        <li><img src="images/Star%201.svg" /></li>
-        <li><img src="images/Star%201.svg" /></li>
-        <li><img src="images/Star%204.svg" /></li>
+    <!-- Footer -->
+    <section
+      id="footer"
+      class="bg-dark p-5 text-light"
+      style="margin: 600px 0 0 0; font-size: 14px"
+    >
+      <div class="container">
+        <div class="footer row">
+          <div class="col-12 col-lg-4">
+            <ul class="nav d-block">
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link pt-0 ps-0"
+                  href="https://www.google.com/maps/@-6.2493128,106.7824432,15z"
+                  >Jalan Besar No. 202 Mayangan Kota Probolonggo 200192</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://mail.google.com/mail"
+                  >salononline@gmail.com</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-light nav-link ps-0" href="#home"
+                  >081-233-334-808</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2">
+            <ul class="nav d-block">
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link pt-0 ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Testimonial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-light nav-link ps-0"
+                  href="https://farhanismadi.github.io/Salonline/Homepage/index.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <p>Connect with us</p>
+            <div>
+              <a class="me-1" href="https://www.facebook.com/"
+                ><img src="images/icon_facebook.png" alt=""
+              /></a>
+              <a class="mx-1" href="https://www.instagram.com/?hl=id"
+                ><img src="images/icon_instagram.png" alt=""
+              /></a>
+              <a class="mx-1" href="#"
+                ><img src="images/icon_twitter.png" alt="https://twitter.com/"
+              /></a>
+              <a class="mx-1" href="https://mail.google.com/mail"
+                ><img src="images/icon_mail.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2 pt-3 pt-lg-0">
+            <p>© Copyright Salonline 2022</p>
+            <span
+              class="fw-bold"
+              style="font-family: abril; font-size: 30px; color: #f3f8b5"
+            >
+              <img src="images/logo-salonline.svg" alt="" /> Salonline
+            </span>
+          </div>
+        </div>
       </div>
-      <hr class="first-line" />
-
-      <hr class="second-line" />
-      <div class="Hair-Treatment">Hair Treatment</div>
-      <div class="Hair-Image">
-        <img src="images/nail-treatment-500x500%201.svg" />
-      </div>
-      <div class="Blow-Dry">Blow Dry</div>
-      <div class="Blow-Dry-Price">Rp100.000,00</div>
-      <div class="mini-line">
-        <img src="images/Line%2065.svg" />
-      </div>
-
-      <hr class="third-line" />
-      <div class="Add-On">Add-On</div>
-      <div class="AddOn-Image">
-        <img src="images/nail-treatment-500x500%202.svg" />
-      </div>
-      <div class="Waxing">Waxing</div>
-      <div class="Waxing-Price">Rp125.000,00</div>
-      <div class="mini-line2">
-        <img src="images/Line%2065.svg" />
-      </div>
-      <hr class="fourth-line" />
-
-      <div class="Order-Summary">Order-Summary</div>
-
-      <div class="Subtotal">Subtotal</div>
-      <div class="Subtotal-Price">Rp225.000,00</div>
-
-      <div class="Tax">Taxes and Charges</div>
-      <div class="Tax-Price">Rp3.500,00</div>
-
-      <div class="Total">Total</div>
-      <div class="Total-Price">Rp228.500,00</div>
-
-      <hr class="fifth-line" />
-
-      <div class="Connect-with-us">Connect with us</div>
-      <div class="Copyright">Copyright Salonline 2022</div>
-      <div class="LogoSalonline2">
-        <img src="images/Group%2072.svg" />
-      </div>
-    </nav>
-
-    <div class="counter">
-      <span class="minus"><img src="images/Group%2017841.svg" /></span>
-      <span class="num">01</span>
-      <span class="plus"><img src="images/Group%2017842.svg" /></span>
-    </div>
-    <script>
-      const plus = document.querySelector(".plus"),
-        minus = document.querySelector(".minus"),
-        num = document.querySelector(".num");
-      let a = 1;
-      plus.addEventListener("click", () => {
-        a++;
-        a = a < 10 ? "0" + a : a;
-        num.innerText = a;
-      });
-
-      minus.addEventListener("click", () => {
-        if (a > 1) {
-          a--;
-          a = a < 10 ? "0" + a : a;
-          num.innerText = a;
-        }
-      });
-    </script>
-
-    <div class="count">
-      <span class="min"><img src="images/Group%2017841.svg" /></span>
-      <span class="number">01</span>
-      <span class="Newplus"><img src="images/Group%2017842.svg" /></span>
-    </div>
-    <script>
-      const Newplus = document.querySelector(".Newplus"),
-        min = document.querySelector(".min"),
-        number = document.querySelector(".number");
-      let z = 1;
-      Newplus.addEventListener("click", () => {
-        z++;
-        z = z < 10 ? "0" + z : z;
-        number.innerText = z;
-      });
-
-      min.addEventListener("click", () => {
-        if (z > 1) {
-          z--;
-          z = z < 10 ? "0" + z : z;
-          number.innerText = z;
-        }
-      });
-    </script>
+    </section>
   </body>
 </html>

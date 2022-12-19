@@ -1,222 +1,66 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  list-style: none;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 body {
-  color: white;
-  background-color: #f6f6f6;
-  font-family: "Montserrat", sans-serif;
-}
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 170px;
-  background: #212121;
-}
-header img {
-  vertical-align: middle;
-  padding-right: 10px;
-  width: 25%;
-}
-.img-salon {
-  width: 100%;
-  background-image: url(Salon.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.logo {
-  color: #f4f8b4;
-  font-family: "Abril Fatface", cursive;
-  font-weight: 200;
-  font-size: 1.4rem;
-  vertical-align: middle;
-}
-.navbar {
-  display: flex;
-}
-.navbar a {
-  color: white;
-  font-size: 1.1rem;
-  padding: 10px 20px;
-  font-weight: 300;
-}
-.navbar a:hover {
-  color: #f4f8b4;
-  transition: 0.4s;
-}
-#menu-icon {
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
-.mail {
-  color: white;
-  font-weight: 200;
-  font-size: 1.1rem;
-  vertical-align: middle;
-}
-.salon-product {
-  width: 70%;
-  background-size: cover;
-  background-position: top;
-}
-.booking {
-  padding: 30px 3%;
-  background-color: #212121;
-  margin: 100px auto 15px;
-  width: 80%;
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 10px;
-}
-.booking-system ul li {
-  list-style-type: none;
-}
-.booking-system ul li a {
-  color: #f4f8b4;
-  text-decoration: none;
-  font-weight: 200;
-  text-transform: capitalize;
-}
-.list {
-  padding: 10px 10%;
-}
-.heading {
-  color: #212121;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.heading h1 {
-  font-family: "Abril Fatface", cursive;
-  font-size: xx-large;
-}
-.list-salon {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-  grid-gap: 0.5rem;
-  align-items: center;
-}
-.salon {
-  position: relative;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  background: #212121;
-  border-radius: 10px;
-}
-.salon-img {
-  width: 100%;
-}
-.salon-img img {
-  width: 100%;
-  border-radius: 10px;
-}
-.salon h1 {
-  color: #ffffff;
-  padding: 10px 15px;
-}
-.salon h3 {
-  color: white;
-  font-weight: lighter;
-  padding: 0px 15px 5px;
-}
-.salon h4 {
-  color: white;
-  font-weight: lighter;
-  padding: 0px 15px;
-}
-.salon span {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 15px 18px;
+  font-family: Montserrat;
 }
 
-.salon .bx {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 15px 45px;
-  font-size: 20px;
+/* Navbar */
+.nav-margin {
+  margin: 0 400px;
 }
-.list2 {
-  padding: 0px 10% 100px;
+
+.form-search {
+  margin: -80px 0 0 0;
 }
-.footer {
-  background-color: #212121;
-  margin-top: 30px;
-  padding: 50px 10%;
+
+.form-search h2 {
+  margin: 0 0 100px 0;
 }
-.main {
-  display: flex;
-  flex-wrap: wrap;
+
+.services {
+  margin: 100px auto auto auto;
 }
-.col {
-  width: 25%;
+
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  .nav-margin {
+    margin: 0;
+  }
+
+  .form-search {
+    margin: -100px 0 0 0;
+  }
+
+  .form-search h2 {
+    margin: 0 0 50px 0;
+  }
 }
-.col h1 {
-  color: #f4f8b4;
+
+@media screen and (max-width: 768px) {
+  .services {
+    margin: 250px auto auto auto;
+  }
+
+  .form-search {
+    margin: 0px 0 0 0;
+  }
 }
-.col h4 {
-  color: white;
-  margin-bottom: 10px;
-  position: relative;
-  font-weight: lighter;
-}
-.col ul li:not(last-child) {
-  margin-bottom: 15px;
-}
-.col ul li a {
-  color: white;
-  font-size: 1.1rem;
-  display: block;
-  text-transform: capitalize;
-  transition: 0.4s;
-}
-.col ul li a:hover {
-  color: #f4f8b4;
-  transform: translateX(+12px);
-}
-.col .social {
-  width: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.col .social a {
-  height: 40px;
-  width: 40px;
-  background: white;
-  color: #212121;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  transition: 0.4s;
-}
-.col .social a:hover {
-  transform: scale(1.2);
-  color: #212121;
-  background: #f4f8b4;
-}
-.footer-salonline {
-  display: flex;
-}
-.footer-salonline img {
-  vertical-align: middle;
-  padding-right: 10px;
+
+@media screen and (max-width: 600px) {
+  .form-search {
+    margin: 0;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
 }
