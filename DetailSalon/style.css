@@ -3,3 +3,200 @@
 body {
   font-family: Montserrat;
 }
+
+.nav-margin {
+  margin: 0 400px;
+}
+
+.header {
+  margin: 250px 0 0 0;
+  background-color: rgba(255, 255, 255, 0.799);
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.all-services {
+  width: 800px;
+}
+
+.services-box {
+  width: 100%;
+  height: 200px;
+}
+
+.services-img {
+  width: 200px;
+  height: auto;
+}
+
+.product-box img {
+  width: 200px;
+}
+
+.product-box p {
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+.add-services {
+  margin: 150px auto 10px 50px;
+}
+
+.cart {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+.arrow-prev {
+  margin: 0 70px 0 0;
+}
+
+.arrow-next {
+  margin: 0 0 0 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  .nav-margin {
+    margin: 0;
+  }
+
+  .header {
+    margin: 200px 0 0 0;
+  }
+
+  .all-services {
+    width: 600px;
+  }
+
+  .services-box {
+    width: 100%;
+    height: 150px;
+  }
+
+  .services-img {
+    width: 150px;
+    height: auto;
+  }
+
+  .services-box div div label {
+    font-size: 10px;
+  }
+
+  .add-services {
+    font-size: 12px;
+    margin: 110px auto 10px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 170px 0 0 0;
+    width: 700px;
+  }
+
+  .header .col h1 {
+    font-size: 22px;
+  }
+
+  .header .col h3 {
+    font-size: 18px;
+  }
+
+  .header .col p {
+    font-size: 12px;
+  }
+
+  .all-services {
+    width: 100%;
+  }
+
+  .cart {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bg-img {
+    height: 200px;
+  }
+
+  .header {
+    margin: 155px 0 0 0;
+    width: 400px;
+  }
+
+  .header .col h1 {
+    font-size: 20px;
+  }
+
+  .header .col h3 {
+    font-size: 16px;
+  }
+
+  .header .col p {
+    font-size: 10px;
+  }
+
+  .search {
+    opacity: 0%;
+  }
+
+  .services-box {
+    width: 100%;
+    height: 170px;
+  }
+
+  .services-img {
+    object-fit: cover;
+    width: 50px;
+    height: auto;
+  }
+
+  .services-box div h4 {
+    font-size: 16px;
+  }
+
+  .services-box div div input {
+    width: 15px;
+    height: 15px;
+  }
+
+  .services-box div div label {
+    font-size: 8px;
+  }
+
+  .add-services {
+    font-size: 8px;
+    width: auto;
+    margin: 130px auto 10px 0;
+  }
+
+  .product-box {
+    width: 140px;
+  }
+
+  .product-box img {
+    width: 100%;
+  }
+
+  .product-box h4 {
+    font-size: 16px;
+  }
+
+  .product-box p {
+    font-size: 8px;
+  }
+
+  .arrow-prev {
+    margin: 0 40px 0 0;
+  }
+
+  .arrow-next {
+    margin: 0 0 0 40px;
+  }
+}
