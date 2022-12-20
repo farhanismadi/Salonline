@@ -2,16 +2,12 @@
 
 body {
   font-family: Montserrat;
+  background-color: #f6f6f6;
 }
 
 /* Navbar */
 .nav-margin {
-  margin: 0 400px;
-}
-
-.card {
-  width: 300px;
-  height: 500px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -24,4 +20,8 @@ body {
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 600px) {
+  .img-cart {
+    object-fit: cover;
+    width: 120px;
+  }
 }

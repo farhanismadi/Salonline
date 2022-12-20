@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 20px auto 20px;
+}
+
+.text {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.title {
+  font-family: "Abril Fatface", cursive;
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #f3f8b5;
+}
+.isi {
+  width: 523px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f6f6f6;
+}
+
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f8b5;
+  margin: 0 auto;
+  width: 510px;
+  height: 430px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+.rating-title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.rate {
+  font-weight: 500;
+  font-size: 16px;
+}
+.star-widget {
+  transform: rotate(180deg);
+  display: grid;
+  width: 330px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  margin: 30px auto;
+}
+.star-widget input {
+  display: none;
+}
+.star-widget label {
+  font-size: 40px;
+  color: rgb(202, 201, 201);
+  float: center;
+  transition: all 0.25s ease;
+  transform: rotate(36deg);
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+input:checked ~ label {
+  color: #fd4;
+  text-shadow: 0 0 2px #952;
+}
+.comment {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+textarea {
+  width: 370px;
+  height: 118px;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid gray(65, 61, 61);
+  transition: all 0.3s;
+}
+textarea:focus {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.submit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  width: 208.6px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #212121;
+  color: #f3f8b5;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.submit:hover {
+  opacity: 90%;
+}
+
+.sosial-media {
+  margin: 56px auto;
+}
+.connect {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f3f8b5;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.sosmed-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 25px;
+}
+.sosmed-icon li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  list-style: none;
+  background-color: white;
+  transition: background-color 0.1s;
+}
+.sosmed-icon li:hover {
+  background-color: rgb(199, 199, 199);
+}
+.sosmed-icon a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sosmed-icon img {
+  width: 23px;
+  height: 23px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-top: 40px;
+  }
+
+  .text {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 45px;
+  }
+  .isi {
+    width: 571px;
+  }
+
+  .rating-box {
+    height: 482px;
+    margin-top: 40px;
+  }
+  .rating-title {
+    margin-bottom: 8px;
+  }
+  .star-widget {
+    margin: 40px auto;
+  }
+  .comment {
+    margin-bottom: 12px;
+  }
+  textarea {
+    height: 125px;
+  }
+  .submit {
+    margin-top: 40px;
+  }
+
+  .sosial-media {
+    margin-top: 60px;
+  }
+  .connect {
+    font-size: 26px;
+  }
+  .sosial-media li {
+    width: 50px;
+    height: 50px;
+  }
+  .sosmed-icon {
+    gap: 40px;
+  }
+  .sosmed-icon img {
+    width: 31.25px;
+    height: 31.25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    height: 43px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+  .isi {
+    width: 325px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .rating-box {
+    width: 300px;
+    height: 360px;
+  }
+  .rating-title {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .rate {
+    font-size: 11px;
+  }
+  .star-widget {
+    width: 224px;
+    column-gap: 12px;
+    padding-left: 4px;
+    margin: 28px 0;
+  }
+  .star-widget label {
+    font-size: 25px;
+  }
+  .comment {
+    width: 195px;
+    text-align: center;
+    font-size: 11px;
+    margin: 0 auto 12px;
+  }
+  textarea {
+    width: 230px;
+    height: 92px;
+    font-size: 11px;
+    margin: 0;
+  }
+  .submit {
+    width: 165px;
+    height: 37px;
+    font-size: 11px;
+    margin-top: 28px;
+  }
+
+  .sosial-media {
+    margin: 50px auto;
+  }
+  .connect {
+    font-size: 18px;
+  }
+  .sosmed-icon {
+    column-gap: 22px;
+  }
+  .sosmed-icon li {
+    width: 30px;
+    height: 30px;
+  }
+  .sosmed-icon img {
+    width: 18.75px;
+    height: 18.75px;
+  }
+}

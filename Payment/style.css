@@ -7,7 +7,7 @@ body {
 
 /* Navbar */
 .nav-margin {
-  margin: 0 450px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {

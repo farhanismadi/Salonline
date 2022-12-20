@@ -6,11 +6,13 @@ body {
 
 /* Navbar */
 .nav-margin {
-  margin: 0 400px;
+  margin: 0 auto;
 }
 
 .form-search {
-  margin: -80px 0 0 0;
+  margin: -80px auto;
+  top: 50%;
+  left: 50%;
 }
 
 .form-search h2 {
@@ -18,7 +20,7 @@ body {
 }
 
 .services {
-  margin: 100px auto auto auto;
+  margin: 200px auto auto auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -28,7 +30,7 @@ body {
   }
 
   .form-search {
-    margin: -100px 0 0 0;
+    top: 40%;
   }
 
   .form-search h2 {
@@ -38,17 +40,17 @@ body {
 
 @media screen and (max-width: 768px) {
   .services {
-    margin: 250px auto auto auto;
+    margin: 450px auto auto auto;
   }
 
   .form-search {
-    margin: 0px 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   .form-search {
-    margin: 0;
+    top: 45%;
   }
 
   .card-img-top {
@@ -62,5 +64,9 @@ body {
 
   .card-text {
     font-size: 12px;
+  }
+
+  .services {
+    margin: 600px auto auto auto;
   }
 }

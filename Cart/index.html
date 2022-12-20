@@ -144,35 +144,173 @@
 
     <!-- Content -->
     <section>
-      <div class="container">
-        <div>
+      <div class="container mt-4" style="width: 100%">
+        <h2 class="mb-4 fw-bold">Order</h2>
+        <div class="bg-white p-3 rounded-3">
+          <h3>Salon:</h3>
+
+          <div class="d-md-flex d-block">
+            <div class="d-md-flex d-block gap-2" style="width: 100%">
+              <div class="">
+                <img src="images/Jakarta.png" alt="" width="200px" />
+              </div>
+              <div class="mt-md-0 mt-3">
+                <h4 class="fw-bold">Pavilion Beauty Salon</h4>
+                <p>Jl. Cempaka Putih Raya No.39B</p>
+              </div>
+            </div>
+            <div class="flex-shrink-1">
+              <img class="" src="images/stars-4.png" alt="" width="200px" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="d-flex gap-5 px-2">
           <div>
-            <div class="p-0 text-start">
-              <div class="card bg-dark p-0">
-                <img src="images/Jakarta.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-title text-white fw-bold mb-4">
-                    Pavilion Beauty Salon
-                  </h4>
-                  <p class="card-text text-white">
-                    Jl. Cempaka Putih Raya No.39B
-                  </p>
-                  <div class="like d-flex justify-content-between mt-5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-heart text-white"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
-                      />
-                    </svg>
-                    <img class="" src="images/star-salon.png" alt="" />
-                  </div>
+            <label for="">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              Select All</label
+            >
+          </div>
+          <div>
+            <a class="btn p-0" href="">Clear All</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="d-lg-flex d-block gap-3">
+          <div class="flex-fill">
+            <div class="bg-white p-3 rounded-2">
+              <label for="">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault1"
+                />
+                Hair Treatment
+              </label>
+              <div class="d-flex mt-3 gap-3">
+                <img class="img-cart" src="images/img-cart.png" alt="" />
+                <div style="width: 100%">
+                  <h4>Blow Dry</h4>
+                  <p>Rp100.000,00</p>
                 </div>
+                <div class="flex-shrink-1">
+                  <a class="btn p-1 mb-5" href=""
+                    ><img src="images/trash.svg" alt="" style="width: 30px"
+                  /></a>
+                  <input
+                    class="form-control"
+                    type="number"
+                    value="1"
+                    style="width: 50px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-3 rounded-2 mt-2">
+              <label for="">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault2"
+                />
+                Add-On
+              </label>
+              <div class="d-flex mt-3 gap-3">
+                <img class="img-cart" src="images/img-cart1.jpg" alt="" />
+                <div style="width: 100%">
+                  <h4>Waxing</h4>
+                  <p>Rp120.000,00</p>
+                </div>
+                <div class="flex-shrink-1">
+                  <a class="btn p-1 mb-5" href=""
+                    ><img src="images/trash.svg" alt="" style="width: 30px"
+                  /></a>
+                  <input
+                    class="form-control"
+                    type="number"
+                    value="1"
+                    style="width: 50px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-3 rounded-2 mt-2">
+              <label for="">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault3"
+                />
+                Product
+              </label>
+              <div class="d-flex mt-3 gap-3">
+                <img class="img-cart" src="images/img-cart2.png" alt="" />
+                <div style="width: 100%">
+                  <h4>Stimulister Spray</h4>
+                  <p>Rp80.000,00</p>
+                </div>
+                <div class="flex-shrink-1">
+                  <a class="btn p-1 mb-5" href=""
+                    ><img src="images/trash.svg" alt="" style="width: 30px"
+                  /></a>
+                  <input
+                    class="form-control"
+                    type="number"
+                    value="1"
+                    style="width: 50px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-fill bg-white p-3 mt-lg-0 mt-3">
+            <h4 class="fw-bold">Order Summary</h4>
+            <div class="mt-4">
+              <div>
+                <div class="d-flex justify-content-between">
+                  <p class="">Hair Treatment</p>
+                  <p class="">Rp100.000,00</p>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between">
+                  <p class="">Add-On</p>
+                  <p class="">Rp120.000,00</p>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between">
+                  <p class="">Stimulister Spray</p>
+                  <p class="">Rp80.000,00</p>
+                </div>
+              </div>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <p class="">Taxes and Charges</p>
+                <p class="">Rp10.000,00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="fw-bold">Total</p>
+                <p class="">Rp310.000,00</p>
+              </div>
+              <div class="d-grid mt-3">
+                <a
+                  class="btn btn-dark"
+                  href="https://farhanismadi.github.io/Salonline/Payment/index.html"
+                  >Choose Payment Method</a
+                >
               </div>
             </div>
           </div>
@@ -184,7 +322,7 @@
     <section
       id="footer"
       class="bg-dark p-5 text-light"
-      style="margin: 600px 0 0 0; font-size: 14px"
+      style="margin: 200px 0 0 0; font-size: 14px"
     >
       <div class="container">
         <div class="footer row">
