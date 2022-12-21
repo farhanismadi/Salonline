@@ -63,6 +63,10 @@ h4 {
   font-size: 18px;
 }
 
+.services-box div div label {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1024px) {
   /* Navbar */
   .nav-margin {
@@ -79,7 +83,7 @@ h4 {
 
   .services-box {
     width: 100%;
-    height: 150px;
+    height: auto;
   }
 
   .services-img {
@@ -152,7 +156,7 @@ h4 {
 
   .services-box {
     width: 100%;
-    height: 170px;
+    height: auto;
   }
 
   .services-img {

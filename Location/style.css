@@ -6,6 +6,11 @@ body {
   background-size: cover;
 }
 
+/* Navbar */
+.nav-margin {
+  margin: 0 auto;
+}
+
 .halaman {
   margin: 0 450px;
 }
@@ -20,6 +25,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .nav-margin {
+    margin: 0;
+  }
+
   .halaman {
     margin: 0 280px;
   }
@@ -46,8 +55,8 @@ body {
 
   .location {
     width: 95%;
-    height: 50%;
-    margin: 180px 10px 0 0;
+    height: auto;
+    margin: 160px 10px 0 0;
   }
 
   .form-floating {
